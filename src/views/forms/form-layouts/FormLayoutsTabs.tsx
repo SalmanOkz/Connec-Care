@@ -162,11 +162,7 @@ const FormLayoutsWithTabs = () => {
                     }}
                   >
                     <MenuItem value='English'>English</MenuItem>
-                    <MenuItem value='French'>French</MenuItem>
-                    <MenuItem value='Spanish'>Spanish</MenuItem>
-                    <MenuItem value='Portuguese'>Portuguese</MenuItem>
-                    <MenuItem value='Italian'>Italian</MenuItem>
-                    <MenuItem value='German'>German</MenuItem>
+                    <MenuItem value='Urdu'>Urdu</MenuItem>
                     <MenuItem value='Arabic'>Arabic</MenuItem>
                   </CustomTextField>
                 </Grid>

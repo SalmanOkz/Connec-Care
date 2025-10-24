@@ -104,7 +104,7 @@ const StepperLinearWithValidation = () => {
   const [isConfirmPasswordShown, setIsConfirmPasswordShown] = useState(false)
 
   // Vars
-  const Languages = ['English', 'French', 'Spanish', 'Portuguese', 'Italian', 'German', 'Arabic']
+  const Languages = ['English', 'Urdu', 'Arabic']
 
   // Hooks
   const {

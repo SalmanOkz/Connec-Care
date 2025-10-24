@@ -48,7 +48,7 @@ const initialData: Data = {
   currency: 'usd'
 }
 
-const languageData = ['English', 'Arabic', 'French', 'German', 'Portuguese']
+const languageData = ['English', 'Urdu', 'Arabic']
 
 const AccountDetails = () => {
   // States
