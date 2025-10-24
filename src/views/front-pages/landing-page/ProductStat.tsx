@@ -40,7 +40,7 @@ const statData: StatData[] = [
     isHover: false
   },
   {
-    title: 'Highly Rated Products',
+    title: 'Highly Rated Service',
     value: '4.8/5',
     svg: <Diamond color='var(--mui-palette-info-main)' />,
     color: 'var(--mui-palette-info-darkerOpacity)',

@@ -79,10 +79,10 @@ const HeroSection = ({ mode }: { mode: SystemMode }) => {
           <Typography
             className={classnames('font-extrabold sm:text-[42px] text-3xl mbe-4 leading-[48px]', styles.heroText)}
           >
-            All in one sass application for your business
+            ConnectCare Platform for Home Care Health service
           </Typography>
           <Typography className='font-medium' color='text.primary'>
-            No coding required to make customizations. The live customizer has everything your marketing need.
+            Track Your info & Your service provider
           </Typography>
           <div className='flex mbs-6 items-baseline justify-center relative'>
             <div className='flex gap-2 absolute inline-start-[0%] block-start-[41%] max-md:hidden'>

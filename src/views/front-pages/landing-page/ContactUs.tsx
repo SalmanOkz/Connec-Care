@@ -94,7 +94,7 @@ const ContactUs = () => {
                     <div>
                       <Typography>Email</Typography>
                       <Typography color='text.primary' className='font-medium'>
-                        example@gamil.com
+                        muhammadsalmanokzz@gmail.com
                       </Typography>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const ContactUs = () => {
                     <div>
                       <Typography>Phone</Typography>
                       <Typography color='text.primary' className='font-medium'>
-                        +123 568 963
+                        +92 333 3212 878
                       </Typography>
                     </div>
                   </div>
@@ -119,7 +119,7 @@ const ContactUs = () => {
                     <Typography variant='h4'>Send a message</Typography>
                     <Typography>
                       If you would like to discuss anything related to payment, account, licensing, partnerships, or
-                      have pre-sales questions, you&#39;re at the right place.
+                      have any questions, you&#39;re at the right place.
                     </Typography>
                   </div>
                   <form className='flex flex-col items-start gap-6'>

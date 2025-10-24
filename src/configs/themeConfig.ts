@@ -54,9 +54,9 @@ export type Config = {
 }
 
 const themeConfig: Config = {
-  templateName: 'Vuexy',
+  templateName: 'ConnectCare',
   homePageUrl: '/dashboard/crm',
-  settingsCookieName: 'vuexy-mui-next-demo-1',
+  settingsCookieName: 'ConnectCare',
   mode: 'system', // 'system', 'light', 'dark'
   skin: 'default', // 'default', 'bordered'
   semiDark: false, // true, false

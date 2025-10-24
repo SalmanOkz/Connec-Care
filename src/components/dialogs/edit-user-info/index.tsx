@@ -54,9 +54,9 @@ const initialData: EditUserInfoProps['data'] = {
 
 const status = ['Status', 'Active', 'Inactive', 'Suspended']
 
-const languages = ['English', 'Urdu']
+const languages = ['English', 'Urdu', 'Arabic']
 
-const countries = ['Select Country', 'Pakistan', 'US', 'China', 'UK', 'Saudi']
+const countries = ['Select Country', 'Pakistan', 'US', 'UK', 'Saudi']
 
 const EditUserInfo = ({ open, setOpen, data }: EditUserInfoProps) => {
   // States

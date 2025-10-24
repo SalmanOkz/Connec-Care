@@ -101,10 +101,10 @@ const authData = [
   //   href: '/forgot-password-v1'
   // },
 
-  {
-    title: 'Forgot Password (Cover)',
-    href: '/forgot-password-v2'
-  },
+  // {
+  //   title: 'Forgot Password (Cover)',
+  //   href: '/forgot-password-v2'
+  // },
 
   // {
   //   title: 'Reset Password (Basic)',

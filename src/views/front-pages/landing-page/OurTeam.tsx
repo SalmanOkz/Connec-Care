@@ -23,25 +23,25 @@ import styles from './styles.module.css'
 // Data
 const team = [
   {
-    name: 'Sophie Gilbert',
+    name: 'Muhammad Salman',
     position: 'Project Manager',
     image: '/images/front-pages/landing-page/sophie.png',
     color: 'var(--mui-palette-primary-mainOpacity)'
   },
   {
-    name: 'Paul Miles',
+    name: 'Daain Akrama Alvi',
     position: 'UI Designer',
     image: '/images/front-pages/landing-page/paul.png',
     color: 'var(--mui-palette-info-mainOpacity)'
   },
   {
-    name: 'Nannie Ford',
+    name: 'Yasir Hussain',
     position: 'Development Lead',
     image: '/images/front-pages/landing-page/nannie.png',
     color: 'var(--mui-palette-error-mainOpacity)'
   },
   {
-    name: 'Chris Watkins',
+    name: 'Omer Al-Sani',
     position: 'Marketing Manager',
     image: '/images/front-pages/landing-page/chris.png',
     color: 'var(--mui-palette-success-mainOpacity)'

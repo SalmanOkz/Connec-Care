@@ -36,7 +36,7 @@ const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
       <UsefulFeature />
       <CustomerReviews />
       <OurTeam />
-      <Pricing />
+      {/* <Pricing /> */}
       <ProductStat />
       <Faqs />
       <GetStarted mode={mode} />
