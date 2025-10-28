@@ -19,6 +19,9 @@ import GetStarted from './GetStarted'
 import ContactUs from './ContactUs'
 import { useSettings } from '@core/hooks/useSettings'
 
+// import Physio from './physio'
+import Nurse from './nurse'
+
 const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
   // Hooks
   const { updatePageSettings } = useSettings()
@@ -34,6 +37,8 @@ const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
   return (
     <div className='bg-backgroundPaper'>
       <HeroSection mode={mode} />
+      <Nurse />
+      {/* <Physio /> */}
       <UsefulFeature />
       <CustomerReviews />
       <OurTeam />

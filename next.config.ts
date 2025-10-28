@@ -15,13 +15,15 @@ const nextConfig: NextConfig = {
         destination: '/dashboards/crm',
         permanent: true,
         locale: false
-      },
-      {
-        source: '/((?!(?:en|front-pages|favicon.ico)\\b)):path',
-        destination: '/en/:path',
-        permanent: true,
-        locale: false
       }
+
+      // ,
+      // {
+      //   source: '/((?!(?:en|front-pages|favicon.ico)\\b)):path',
+      //   destination: '/en/:path',
+      //   permanent: true,
+      //   locale: false
+      // }
     ]
   }
 }
