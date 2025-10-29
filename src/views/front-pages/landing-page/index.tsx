@@ -19,8 +19,9 @@ import GetStarted from './GetStarted'
 import ContactUs from './ContactUs'
 import { useSettings } from '@core/hooks/useSettings'
 
-// import Physio from './physio'
+// import Nurse from './nurse'
 import Nurse from './nurse'
+import ChooseService from './ChooseService'
 
 const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
   // Hooks
@@ -39,6 +40,7 @@ const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
       <HeroSection mode={mode} />
       <Nurse />
       {/* <Physio /> */}
+      <ChooseService />
       <UsefulFeature />
       <CustomerReviews />
       <OurTeam />

@@ -21,7 +21,7 @@ const Physio = () => {
         Choose the Care That Fits Your Needs
       </Typography>
       <Typography variant='body1' color='text.secondary' paragraph>
-        healthcare professionals
+        Healthcare Professionals
       </Typography>
 
       {/* Physiotherapy Card */}
