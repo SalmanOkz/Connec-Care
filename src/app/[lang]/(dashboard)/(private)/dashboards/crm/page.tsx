@@ -13,6 +13,7 @@ import ProjectStatus from '@views/dashboards/crm/ProjectStatus'
 import ActiveProjects from '@views/dashboards/crm/ActiveProjects'
 import LastTransaction from '@views/dashboards/crm/LastTransaction'
 import ActivityTimeline from '@views/dashboards/crm/ActivityTimeline'
+import Connections from '@/views/pages/user-profile/connections'
 
 // Server Action Imports
 import { getServerMode } from '@core/utils/serverHelpers'
@@ -80,6 +81,9 @@ const DashboardCRM = async () => {
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
         <ActivityTimeline />
+      </Grid>
+      <Grid size={{ xs: 12, md: 6 }}>
+        <Connections />
       </Grid>
     </Grid>
   )

@@ -8,7 +8,8 @@ import FormLayoutsIcon from '@views/forms/form-layouts/FormLayoutsIcons'
 import FormLayoutsSeparator from '@views/forms/form-layouts/FormLayoutsSeparator'
 import FormLayoutsTabs from '@views/forms/form-layouts/FormLayoutsTabs'
 import FormLayoutsCollapsible from '@views/forms/form-layouts/FormLayoutsCollapsible'
-import FormLayoutsAlignment from '@views/forms/form-layouts/FormLayoutsAlignment'
+
+// import FormLayoutsAlignment from '@views/forms/form-layouts/FormLayoutsAlignment'
 
 const FormLayouts = () => {
   return (
@@ -34,9 +35,9 @@ const FormLayouts = () => {
       <Grid size={{ xs: 12 }}>
         <FormLayoutsCollapsible />
       </Grid>
-      <Grid size={{ xs: 12 }}>
+      {/* <Grid size={{ xs: 12 }}>
         <FormLayoutsAlignment />
-      </Grid>
+      </Grid> */}
     </Grid>
   )
 }

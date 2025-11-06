@@ -27,7 +27,7 @@ import '@/app/globals.css'
 import '@assets/iconify-icons/generated-icons.css'
 
 export const metadata = {
-  title: 'Admin Dashboard Template',
+  title: 'Home',
   description: 'ConnectCare home based health care management system!'
 }
 
@@ -37,26 +37,28 @@ const Layout = async ({ children }: ChildrenType) => {
 
   return (
     <html id='__next' suppressHydrationWarning>
-      <body className='flex is-full min-bs-full flex-auto flex-col'>
-        <InitColorSchemeScript attribute='data' defaultMode={systemMode} />
-        <Providers direction='ltr'>
-          <BlankLayout systemMode={systemMode}>
-            <IntersectionProvider>
-              <FrontLayout>
-                {children}
-                <ScrollToTop className='mui-fixed'>
-                  <Button
-                    variant='contained'
-                    className='is-10 bs-10 rounded-full p-0 min-is-0 flex items-center justify-center'
-                  >
-                    <i className='tabler-arrow-up' />
-                  </Button>
-                </ScrollToTop>
-              </FrontLayout>
-            </IntersectionProvider>
-          </BlankLayout>
-        </Providers>
-      </body>
+      <html id='__next' suppressHydrationWarning>
+        <body className='flex is-full min-bs-full flex-auto flex-col'>
+          <InitColorSchemeScript attribute='data' defaultMode={systemMode} />
+          <Providers direction='ltr'>
+            <BlankLayout systemMode={systemMode}>
+              <IntersectionProvider>
+                <FrontLayout>
+                  {children}
+                  <ScrollToTop className='mui-fixed'>
+                    <Button
+                      variant='contained'
+                      className='is-10 bs-10 rounded-full p-0 min-is-0 flex items-center justify-center'
+                    >
+                      <i className='tabler-arrow-up' />
+                    </Button>
+                  </ScrollToTop>
+                </FrontLayout>
+              </IntersectionProvider>
+            </BlankLayout>
+          </Providers>
+        </body>
+      </html>
     </html>
   )
 }

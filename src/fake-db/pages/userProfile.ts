@@ -558,7 +558,7 @@ export const db: DB = {
         isConnected: true,
         connections: '129',
         name: 'Mark Gilbert',
-        designation: 'UI Designer',
+        designation: 'Physio',
         avatar: '/images/avatars/1.png',
         chips: [
           {
@@ -577,7 +577,7 @@ export const db: DB = {
         isConnected: false,
         connections: '1.28k',
         name: 'Eugenia Parsons',
-        designation: 'Developer',
+        designation: 'Nurse',
         avatar: '/images/avatars/2.png',
         chips: [
           {
@@ -596,7 +596,7 @@ export const db: DB = {
         isConnected: false,
         connections: '890',
         name: 'Francis Byrd',
-        designation: 'Developer',
+        designation: 'Physio',
         avatar: '/images/avatars/3.png',
         chips: [
           {
@@ -615,7 +615,7 @@ export const db: DB = {
         isConnected: false,
         connections: '890',
         name: 'Leon Lucas',
-        designation: 'UI/UX Designer',
+        designation: 'Nurse',
         avatar: '/images/avatars/4.png',
         chips: [
           {
@@ -638,7 +638,7 @@ export const db: DB = {
         isConnected: true,
         connections: '2.14k',
         name: 'Jayden Rogers',
-        designation: 'Full Stack Developer',
+        designation: 'Nurse',
         avatar: '/images/avatars/5.png',
         chips: [
           {
@@ -659,7 +659,7 @@ export const db: DB = {
         tasks: '1.28k',
         projects: '32',
         isConnected: false,
-        designation: 'SEO',
+        designation: 'Nurse',
         connections: '1.27k',
         name: 'Jeanette Powell',
         avatar: '/images/avatars/6.png',
@@ -680,7 +680,7 @@ export const db: DB = {
     fullName: 'John Doe',
     location: 'Vatican City',
     joiningDate: 'April 2021',
-    designation: 'UX Designer',
+    designation: 'Physio',
     profileImg: '/images/avatars/1.png',
     designationIcon: 'tabler-palette',
     coverImg: '/images/pages/profile-banner.png'

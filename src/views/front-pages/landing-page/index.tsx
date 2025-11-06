@@ -19,7 +19,6 @@ import GetStarted from './GetStarted'
 import ContactUs from './ContactUs'
 import { useSettings } from '@core/hooks/useSettings'
 
-// import Nurse from './nurse'
 import Nurse from './nurse'
 import ChooseService from './ChooseService'
 
@@ -39,7 +38,6 @@ const LandingPageWrapper = ({ mode }: { mode: SystemMode }) => {
     <div className='bg-backgroundPaper'>
       <HeroSection mode={mode} />
       <Nurse />
-      {/* <Physio /> */}
       <ChooseService />
       <UsefulFeature />
       <CustomerReviews />

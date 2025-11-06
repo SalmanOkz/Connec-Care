@@ -1,7 +1,7 @@
 'use client'
 
 // React Imports
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 // Next Imports
 import { usePathname } from 'next/navigation'
@@ -85,6 +85,16 @@ const FrontMenu = (props: Props) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isBelowLgScreen])
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  // Check if the user is logged in (assuming role is saved in localStorage after login)
+  useEffect(() => {
+    const role = localStorage.getItem('role') // Or use cookies or context
+
+    if (role) {
+      setIsLoggedIn(true) // Set state to true if the role exists (meaning the user is logged in)
+    }
+  }, [])
 
   return (
     <Wrapper isBelowLgScreen={isBelowLgScreen} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen}>
@@ -149,15 +159,17 @@ const FrontMenu = (props: Props) => {
         isDrawerOpen={isDrawerOpen}
         setIsDrawerOpen={setIsDrawerOpen}
       />
-      <Typography
-        component={Link}
-        color='text.primary'
-        href='/dashboard'
-        target='_blank'
-        className='font-medium plb-3 pli-1.5 hover:text-primary'
-      >
-        Admin
-      </Typography>
+      {isLoggedIn && (
+        <Typography
+          component={Link}
+          color='text.primary'
+          href='/dashboard'
+          target='_blank'
+          className='font-medium plb-3 pli-1.5 hover:text-primary'
+        >
+          Admin
+        </Typography>
+      )}
     </Wrapper>
   )
 }

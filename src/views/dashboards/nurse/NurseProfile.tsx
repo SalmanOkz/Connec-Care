@@ -1,8 +1,7 @@
 // MUI Imports
-import Grid2 from '@mui/material/Grid2'
+import Grid from '@mui/material/Grid2' // Use Grid2 for better grid layout
 import Avatar from '@mui/material/Avatar'
-
-// import Chip from '@mui/material/Chip'
+import Chip from '@mui/material/Chip'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
@@ -16,42 +15,46 @@ import OptionMenu from '@core/components/option-menu'
 import Link from '@components/Link'
 import CustomIconButton from '@core/components/mui/IconButton'
 
-// New Nurse Content for Connections
-const Connections = ({ data }: { data?: ConnectionsTabType[] }) => {
+const NurseProfile = ({ data }: { data?: ConnectionsTabType[] }) => {
   return (
-    <Grid2 container spacing={6}>
+    <Grid container spacing={6}>
       {data &&
         data.map((item, index) => {
           return (
-            <Grid2 size={{ xs: 12, sm: 6, md: 4 }} key={index}>
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 6 }}>
               <Card className='relative'>
+                {/* Option Menu */}
                 <OptionMenu
                   iconClassName='text-textDisabled'
                   options={[
                     'Share Connection',
                     'Block Connection',
-                    { divider: true }
-
-                    // {
-                    //   text: 'Delete',
-                    //   menuItemProps: { className: 'text-error hover:bg-[var(--mui-palette-error-lightOpacity)]' }
-                    // }
+                    { divider: true },
+                    {
+                      text: 'Delete',
+                      menuItemProps: { className: 'text-error hover:bg-[var(--mui-palette-error-lightOpacity)]' }
+                    }
                   ]}
                   iconButtonProps={{ className: 'absolute top-6 end-5 text-textDisabled' }}
                 />
                 <CardContent className='flex items-center flex-col gap-6'>
+                  {/* Avatar */}
                   <Avatar src={item.avatar} className='!mbs-5 bs-[100px] is-[100px]' alt='Nurse Avatar' />
                   <div className='flex flex-col items-center'>
                     <Typography variant='h5'>{item.name}</Typography>
                     <Typography>{item.designation}</Typography>
                   </div>
+
+                  {/* Chips */}
                   <div className='flex items-center gap-4'>
                     {item.chips.map((chip, index) => (
                       <Link key={index}>
-                        {/* <Chip variant='tonal' label={chip.title} color={chip.color} size='small' /> */}
+                        <Chip variant='tonal' label={chip.title} color={chip.color} size='small' />
                       </Link>
                     ))}
                   </div>
+
+                  {/* Stats */}
                   <div className='flex is-full items-center justify-around flex-wrap'>
                     <div className='flex items-center flex-col'>
                       <Typography variant='h5'>{item.projects}</Typography>
@@ -66,23 +69,26 @@ const Connections = ({ data }: { data?: ConnectionsTabType[] }) => {
                       <Typography>Connections</Typography>
                     </div>
                   </div>
+
+                  {/* Buttons */}
                   <div className='flex items-center gap-4'>
-                    <Link href={`/forms/form-wizard`} passHref>
-                      <Button variant='contained' color='primary' fullWidth sx={{ mt: 2 }}>
-                        {item.isConnected ? 'Appointment Booked' : 'Book Appointment'}
-                      </Button>
-                    </Link>
+                    <Button
+                      variant={item.isConnected ? 'contained' : 'tonal'}
+                      startIcon={<i className={item.isConnected ? 'tabler-user-check' : 'tabler-user-plus'} />}
+                    >
+                      {item.isConnected ? 'Appointment Taken' : 'Appointment'}
+                    </Button>
                     <CustomIconButton variant='tonal' color='secondary'>
                       <i className='tabler-mail' />
                     </CustomIconButton>
                   </div>
                 </CardContent>
               </Card>
-            </Grid2>
+            </Grid>
           )
         })}
-    </Grid2>
+    </Grid>
   )
 }
 
-export default Connections
+export default NurseProfile

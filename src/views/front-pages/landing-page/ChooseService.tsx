@@ -10,7 +10,9 @@ import Button from '@mui/material/Button'
 import VaccinesIcon from '@mui/icons-material/Vaccines'
 import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics'
 import Box from '@mui/material/Box'
- 
+
+import Link from '@/components/Link'
+
 const ThreeColumnSection = () => {
   return (
     <Box
@@ -60,7 +62,7 @@ const ThreeColumnSection = () => {
           <Typography variant='body2' color='text.secondary' paragraph>
             Efficient, Delegated and Professional nursing experience at your doorstep.
           </Typography>
-          <Button variant='contained' color='primary'>
+          <Button variant='contained' color='primary' component={Link} href='/pages/auth/login-v2'>
             Book Now!
           </Button>
         </CardContent>
@@ -84,7 +86,7 @@ const ThreeColumnSection = () => {
           <Typography variant='body2' color='text.secondary' paragraph>
             Let your demand of Physiotherapy be fulfiled on a single click.
           </Typography>
-          <Button variant='contained' color='primary'>
+          <Button variant='contained' color='primary' component={Link} href='/pages/auth/login-v2'>
             Book Now!
           </Button>
         </CardContent>

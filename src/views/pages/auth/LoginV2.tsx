@@ -154,7 +154,7 @@ const LoginV2 = ({ mode }: { mode: SystemMode }) => {
                 Forgot password?
               </Typography>
             </div>
-            <Button fullWidth variant='contained' type='submit'>
+            <Button fullWidth variant='contained' type='submit' component={Link} href='/dashboard'>
               Login
             </Button>
             <div className='flex justify-center items-center flex-wrap gap-2'>
