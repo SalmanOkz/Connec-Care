@@ -27,7 +27,7 @@ const AccountSettings = ({ tabContentList }: { tabContentList: { [key: string]: 
         <Grid size={{ xs: 12 }}>
           <CustomTabList onChange={handleChange} variant='scrollable' pill='true'>
             <Tab label='Account' icon={<i className='tabler-users' />} iconPosition='start' value='account' />
-            <Tab label='Security' icon={<i className='tabler-lock' />} iconPosition='start' value='security' />
+            {/* <Tab label='Security' icon={<i className='tabler-lock' />} iconPosition='start' value='security' />
             <Tab
               label='Billing & Plans'
               icon={<i className='tabler-bookmark' />}
@@ -40,7 +40,7 @@ const AccountSettings = ({ tabContentList }: { tabContentList: { [key: string]: 
               iconPosition='start'
               value='notifications'
             />
-            <Tab label='Connections' icon={<i className='tabler-link' />} iconPosition='start' value='connections' />
+            <Tab label='Connections' icon={<i className='tabler-link' />} iconPosition='start' value='connections' /> */}
           </CustomTabList>
         </Grid>
         <Grid size={{ xs: 12 }}>

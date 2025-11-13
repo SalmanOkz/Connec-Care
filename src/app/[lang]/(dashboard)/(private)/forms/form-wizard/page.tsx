@@ -46,7 +46,7 @@ const FormWizard = () => {
       <Grid size={{ xs: 12 }}>
         <StepperLinearWithValidation />
       </Grid>
-      <Grid size={{ xs: 12 }}>
+      {/* <Grid size={{ xs: 12 }}>
         <Typography variant='h5'>Alternative Label</Typography>
       </Grid>
       <Grid size={{ xs: 12 }}>
@@ -69,7 +69,7 @@ const FormWizard = () => {
       </Grid>
       <Grid size={{ xs: 12 }}>
         <StepperCustomVertical />
-      </Grid>
+      </Grid> */}
     </Grid>
   )
 }

@@ -17,6 +17,8 @@ import type { SelectChangeEvent } from '@mui/material/Select'
 // Component Imports
 import CustomTextField from '@core/components/mui/TextField'
 
+import QualificationStep from './qualificationdoc'
+
 type Data = {
   firstName: string
   lastName: string
@@ -37,15 +39,15 @@ const initialData: Data = {
   firstName: 'John',
   lastName: 'Doe',
   email: 'john.doe@example.com',
-  organization: 'Pixinvent',
-  phoneNumber: '+1 (917) 543-9876',
-  address: '123 Main St, New York, NY 10001',
-  state: 'New York',
+  organization: 'ConnectCare',
+  phoneNumber: '+92 333 3212878',
+  address: '123 Main St, Karachi, KY 10001',
+  state: 'Karachi',
   zipCode: '634880',
-  country: 'usa',
-  language: 'english',
+  country: 'pak',
+  language: 'urdu',
   timezone: 'gmt-12',
-  currency: 'usd'
+  currency: 'pkr'
 }
 
 const languageData = ['English', 'Urdu', 'Arabic']
@@ -55,7 +57,8 @@ const AccountDetails = () => {
   const [formData, setFormData] = useState<Data>(initialData)
   const [fileInput, setFileInput] = useState<string>('')
   const [imgSrc, setImgSrc] = useState<string>('/images/avatars/1.png')
-  const [language, setLanguage] = useState<string[]>(['English'])
+  const [language, setLanguage] = useState<string[]>(['Urdu'])
+  const [qualificationFile, setQualificationFile] = useState<File | null>(null)
 
   const handleDelete = (value: string) => {
     setLanguage(current => current.filter(item => item !== value))
@@ -198,10 +201,10 @@ const AccountDetails = () => {
                 value={formData.country}
                 onChange={e => handleFormChange('country', e.target.value)}
               >
-                <MenuItem value='usa'>USA</MenuItem>
-                <MenuItem value='uk'>UK</MenuItem>
+                <MenuItem value='usa'>Pak</MenuItem>
+                {/* <MenuItem value='uk'>UK</MenuItem>
                 <MenuItem value='australia'>Australia</MenuItem>
-                <MenuItem value='germany'>Germany</MenuItem>
+                <MenuItem value='germany'>Germany</MenuItem> */}
               </CustomTextField>
             </Grid>
             <Grid size={{ xs: 12, sm: 6 }}>
@@ -276,12 +279,15 @@ const AccountDetails = () => {
                 value={formData.currency}
                 onChange={e => handleFormChange('currency', e.target.value)}
               >
-                <MenuItem value='usd'>USD</MenuItem>
-                <MenuItem value='euro'>EUR</MenuItem>
-                <MenuItem value='pound'>Pound</MenuItem>
+                <MenuItem value='usd'>PKR</MenuItem>
+                <MenuItem value='euro'>USD</MenuItem>
                 <MenuItem value='bitcoin'>Bitcoin</MenuItem>
               </CustomTextField>
             </Grid>
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <QualificationStep onFileChange={file => setQualificationFile(file)} />
+            </Grid>
+
             <Grid size={{ xs: 12 }} className='flex gap-4 flex-wrap'>
               <Button variant='contained' type='submit'>
                 Save Changes
